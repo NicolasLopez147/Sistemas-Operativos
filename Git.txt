@@ -1,0 +1,26 @@
+Cambiar nombre de la rama por defecto por master
+git init
+git remote add origin <url proyecto>
+git add .
+git commit -m "Mensaje"
+git pull origin master --allow-unrelated-histories -m <mensaje>
+git push origin master
+
+#Repositorios remotos
+git remote add <NombreRepositorioRemoto> <url proyecto> //Crear una repositorio
+git remote -v //Ver los repositorios
+git remote rm <Nombre> //Eliminar repositorio remoto
+
+#Manejo de archivos linux
+cat > <NombreArchivo.*> //Crear archivo
+touch <Nombre archivo> //Crear archivo
+Ctrl+z                //Salir archivo
+
+#Ramas
+//Se crea la rama en github
+git branch <Nombre rama> // Crear ramas
+git checkout <Nombre rama> //Cambiar a esa rama
+git pull origin <Nombre Rama Github> //Se trae lo que esta en esa rama
+git push origin <Nombre repositorio git>:<Nombre rama destino github>
+git branch -v //Ver todas las ramas
+git branck -d <NombreRama> //Eliminar una rama
